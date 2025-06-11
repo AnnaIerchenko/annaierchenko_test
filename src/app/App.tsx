@@ -9,6 +9,7 @@ import { githubApi } from '../shared/lib/api';
 import type { User } from '../shared/lib/types';
 import { AppSkeleton } from '../shared/ui/AppSkeleton';
 import { NotFound } from '../features/NotFound/NotFound';
+import type { AxiosResponse } from 'axios';
 
 export const App = () => {
     const [username, setUsername] = useState('');
@@ -23,7 +24,7 @@ export const App = () => {
         setLoadingUser(true);
         githubApi
             .get(`/users/${username}`)
-            .then((res) => setUserData(res.data))
+            .then((res: AxiosResponse) => setUserData(res.data))
             .catch(() => setUserData(null))
             .finally(() => setLoadingUser(false));
     }, [username]);
