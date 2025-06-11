@@ -1,0 +1,32 @@
+.app {
+    font-family: sans-serif;
+}
+
+.header {
+    background: var(--main-color);
+    padding: 20px;
+}
+
+.main {
+    padding: 40px;
+}
+
+.emptyWrapper {
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.list {
+    flex: 1;
+    padding: 1rem;
+}

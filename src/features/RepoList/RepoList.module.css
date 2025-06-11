@@ -1,0 +1,56 @@
+.list {
+    flex: 1;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.pageInfo {
+    margin-right: 1rem;
+    color: #555;
+}
+
+.ellipsis {
+    margin: 0 0.5rem;
+}
+.pageButton {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    padding: 0.2rem 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.pageButton:hover {
+    text-decoration: underline;
+}
+
+.pageButton:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.activePageButton {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,29 @@
+.wrapper {
+    background: var(--main-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.githubIcon {
+    color: white; /* белая иконка */
+    font-size: 30px; /* размер подбери */
+    margin-right: 0.75rem; /* отступ справа от иконки до инпута */
+    flex-shrink: 0; /* чтобы не сжималась */
+}
+
+.input {
+    width: 300px;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 4.5rem;
+    transform: translateY(-50%);
+    color: #777;
+    pointer-events: none; /* иконка не перехватывает клики */
+}

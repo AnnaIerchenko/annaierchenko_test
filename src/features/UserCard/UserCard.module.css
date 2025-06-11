@@ -1,0 +1,44 @@
+.card {
+    padding: 1rem;
+    max-width: 600px;
+}
+.avatar {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.nameRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+}
+
+.userLink {
+    font-weight: 500;
+}
+
+.userLink:hover {
+    text-decoration: underline;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.icon {
+    color: #666;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+.statBlock {
+    display: flex;
+    align-items: center;
+}
